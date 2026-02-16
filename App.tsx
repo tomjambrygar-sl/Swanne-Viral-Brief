@@ -6,17 +6,17 @@ import InspirationCard from './InspirationCard';
 import { Plus, LayoutGrid, Instagram, Video } from 'lucide-react';
 
 const App: React.FC = () => {
-  const [items, setItems] = useState<InspirationItem[]>(INITIAL_DATA);
+  const [items, setItems] = INITIAL_DATA;
 
-  const updateItem = (id: string, updates: Partial<InspirationItem>) => {
+  const = (id: string, updates: Partial<InspirationItem>) => {
     setItems(prev => prev.map(item => item.id === id ? { ...item, ...updates } : item));
   };
 
-  const deleteItem = (id: string) => {
+  const = (id: string) => {
     setItems(prev => prev.filter(item => item.id !== id));
   };
 
-  const addNewItem = () => {
+  const = () => {
     const newItem: InspirationItem = {
       id: Date.now().toString(),
       url: '',
