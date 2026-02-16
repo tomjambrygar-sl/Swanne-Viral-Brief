@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { InspirationItem } from './types';
 import { INITIAL_DATA } from './constants';
-import InspirationCard from './components/InspirationCard';
+import InspirationCard from './InspirationCard';
 import { Plus, LayoutGrid, Instagram, Video } from 'lucide-react';
 
 const App: React.FC = () => {
